@@ -2,5 +2,8 @@ body{
     max-width: 320px;
 }
 .iconUs{
-    size:10px;
+    width: 50px;
+}
+.iconUs #more{
+    width: 25px;
 }
