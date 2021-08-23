@@ -1,12 +1,25 @@
 body{
     max-width: 320px;
 }
+.barraUs{
+    display: flex;
+}
 #icon_US {
     width: 50px;
 }
 #more{
     width: 25px;
+    height: 25px;
 }
 #logo{
     height: 35px;
+}
+.more{
+    position: relative;
+    z-index: 3;
+    left: -15px;
+    top: 30px;
+}
+.logo{
+    margin-left: 30px;
 }
