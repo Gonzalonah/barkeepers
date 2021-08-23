@@ -1,9 +1,12 @@
 body{
     max-width: 320px;
 }
-.iconUs{
+#icon_Us {
     width: 50px;
 }
-.iconUs #more{
+#more{
     width: 25px;
+}
+#logo{
+    height: 35px;
 }
