@@ -1,5 +1,6 @@
 .main {
     max-width: 320px;
+	background: #252525;
 }
 .barraUs{
     display: flex;
@@ -22,81 +23,47 @@
 }
 .logo{
     margin-left: 30px;
+	top: 300px;
 }
 
-
-form {
-	width: 200px;
-	height: 40px;
-	margin: 10px auto 0;
+.search {
+	width: 100%;
 	position: relative;
-}
-
-/* Ok, HTML markup is complete */
-/* submit button will also be the same but with a different color. We'll style the label and the submit input */
-/* a faky 3D look */
-
-#submit {
-	display: none;	
-}
-
-form .icon, form .submit {
-	width: 35px;
-	height: 35px;
-	background: #d75813;
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	box-shadow:
-		0px 5px #bc490a,
-		0px 8px 10px rgba(0, 0, 0, 0.5);
-}
-
-form .submit {
-	background: #009bff;
-	cursor: pointer;
-	box-shadow:
-		0px 5px #0276c1,
-		0px 8px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Now, we'll create a search (magnifying glass) icon using pseudo elements */
-form .icon:after, form .submit:after  {
-	content: '';
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	border: 2px solid white;
-	border-radius: 50%;
-	left: 10px;
-	top: 9px;
-}
-
-form .icon:before, form .submit:before {
-	content: '';
-	position: absolute;
-	height: 8px;
-	width: 2px;
-	background: white;
-	transform: rotate(-35deg);
-	top: 19px;
-	left: 21px;
-}
-
-/* Styling the input */
-form #search {
-	-webkit-appearance: none;
-	height: 35px;
-	width: 0;
-	position: absolute;
-	padding: 0;
-	opacity: 0;
-	border: none;
+	display: flex;
+  }
+  
+  .searchTerm {
+	width: 100%;
+	border: 3px solid #00B4CC;
+	border-right: none;
+	padding: 5px;
+	height: 20px;
+	border-radius: 5px 0 0 5px;
 	outline: none;
+	color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+	color: #00B4CC;
+  }
+  
+  .searchButton {
+	width: 40px;
+	height: 36px;
+	border: 1px solid #00B4CC;
+	background: #00B4CC;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .barraNav{
+	width: 30%;
 	position: absolute;
-	right: 35px;
-	box-shadow:
-		0px 5px #bbb,
-		0px 8px 10px rgba(0, 0, 0, 0.5);
-}
+	top: 90px;
+	left: 150px;
+	transform: translate(-50%, -50%);
+  }
