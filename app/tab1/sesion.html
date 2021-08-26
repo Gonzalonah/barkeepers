@@ -3,12 +3,49 @@
     <head>
     <meta charset="utf-8" />
     <title>Barkeepers</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="../index.css" />
+	<link rel="stylesheet" href="users.css" />
     </head>
-	<body>
-		<center>
+	<body class="main">
+
+		<div class="login-box">
+			<h2>Login</h2>
+			<form action="Users.php" method="post">
+			  <div class="user-box">
+				<input type="text" name="" required="">
+				<label>Username</label>
+			  </div>
+			  <div class="user-box">
+				<input type="password" name="" required="">
+				<label>Password</label>
+			  </div>
+			  <a href="#">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				Submit
+			  </a>
+			</form>
+		  </div>
+
+
+
+
+			<h1>Inicio de sesión</h1>
+					<form action="Users.php" method="post">
+						<label>Correo</label>
+						<input type="text" name="correo">
+						<br><br>
+						<label>Contraseña</label>
+						<input type="text" name="contraseña">
+						<br><br>
+						<input type="submit" name="siguiente" value="Siguiente">
+				</form>	
+
+		<center >
 			<h1>Cargar y Ver Datos</h1>
-				<form action="BaseTragos.php" method="post">
+				<form action="Users.php" method="post">
 					<label>Nombre</label>
 					<input type="text" name="nombre">
 						<br><br>
