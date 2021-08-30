@@ -5,6 +5,7 @@
     <title>Barkeepers</title>
     <link rel="stylesheet" href="../index.css" />
 	<link rel="stylesheet" href="users.css" />
+	<script src="user.js"></script>
 	<link rel="icon" type="image/png" href="../assets/icon/icon.png" />
     </head>
 	<body class="main">
@@ -33,7 +34,7 @@
 		</br>
 			<div class="log_out"></div>
 			<h2>Registro</h2>
-			<form action="Users.php" method="post" id="newUser">
+			<form action="Users.php" method="post" id="new">
 				<div class="user-box">
 					<input type="text" name="nombre" required="">
 					<label>Nombre</label>
@@ -54,7 +55,7 @@
 					<input type="date" name="fecha">
 					<label>Nacimiento</label>
 				</div>
-				<a onclick="myFunction">
+				<a href="#" onclick="myFunction()">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -63,11 +64,5 @@
 				  </a>
 
 			</form>	
-			<script>
-				function myFunction() {
-    				document.getElementById("newUser").User();
-				}
-			</script>
-
 	</body>
 </html>	

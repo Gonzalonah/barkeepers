@@ -1,3 +1,3 @@
 function myFunction() {
-    document.getElementById("newUser").User();
+    document.getElementById("new").Users();
 }
