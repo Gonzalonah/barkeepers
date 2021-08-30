@@ -11,7 +11,7 @@
 
 		<div class="login-box">
 			<h2>Login</h2>
-			<form action="Log.php" method="post">
+			<form action="Log.php" method="post" id="UserLog">
 			  <div class="user-box">
 				<input type="text" name="correo" required="">
 				<label>Correo</label>
@@ -20,14 +20,20 @@
 				<input type="password" name="" required="">
 				<label>Password</label>
 			  </div>
-			  <input type="button" value="Siguiente" style="width: 154px;">
+			  <a href="#">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				Submit
+			  </a>
 			</form>
 		</br>
 		</br>
 		</br>
 			<div class="log_out"></div>
 			<h2>Registro</h2>
-			<form action="Users.php" method="post">
+			<form action="Users.php" method="post" id="newUser">
 				<div class="user-box">
 					<input type="text" name="nombre" required="">
 					<label>Nombre</label>
@@ -52,7 +58,14 @@
 					<input type="date" name="fecha">
 					<label>Nacimiento</label>
 				</div>
-				<input type="button" value="Siguiente"style="width: 154px;"onClick="action='Users.php'">
+				<a onclick="myFunction">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Submit
+				  </a>
+
 			</form>	
 
 
